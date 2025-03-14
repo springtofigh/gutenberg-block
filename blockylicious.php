@@ -26,16 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_blockylicious_block_init() {
-	if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) { // Function introduced in WordPress 6.8.
-		wp_register_block_types_from_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
-	} else {
-		if ( function_exists( 'wp_register_block_metadata_collection' ) ) { // Function introduced in WordPress 6.7.
-			wp_register_block_metadata_collection( __DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php' );
-		}
-		$manifest_data = require __DIR__ . '/build/blocks-manifest.php';
-		foreach ( array_keys( $manifest_data ) as $block_type ) {
-			register_block_type( __DIR__ . "/build/{$block_type}" );
-		}
-	}
+			register_block_type( __DIR__ . "/build/blocks/curvy" );
 }
 add_action( 'init', 'create_block_blockylicious_block_init' );
