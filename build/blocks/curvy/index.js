@@ -8,7 +8,7 @@
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"widgets","icon":"smiley","description":"Make curvy styles more creative and easier than you except.","example":{},"supports":{"html":false,"color":{"background":true,"text":true,"link":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#21759b"}}},"enableTopCurve":{"type":"boolean","default":true}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"widgets","icon":"smiley","description":"Make curvy styles more creative and easier than you except.","example":{},"supports":{"html":false,"color":{"background":true,"text":true,"link":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#21759b"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"50px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHight":{"type":"number","default":100}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ }),
 
@@ -25,17 +25,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 
-const Curve = () => {
+const Curve = props => {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
+    style: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      height: props.height,
+      width: "100%",
+      overflow: "hidden"
+    },
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("svg", {
+      preserveAspectRatio: "none",
+      className: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        height: props.height,
+        width: `${props.width}%`
+      },
       viewBox: "0 0 1200 120",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-        fill: "black",
+      children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
         style: {
-          fill: "black"
+          fill: "white"
         },
         d: "M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-      })
+      })]
     })
   });
 };
@@ -100,25 +115,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Edit(props) {
-  console.log({
-    props
-  });
   const {
     className,
     ...blockProps
   } = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
-  console.log({
-    className
-  });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("section", {
       className: `${className} alignfull`,
       ...blockProps,
-      children: props.attributes.enableTopCurve && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_curve__WEBPACK_IMPORTED_MODULE_5__.Curve, {})
+      children: props.attributes.enableTopCurve && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_curve__WEBPACK_IMPORTED_MODULE_5__.Curve, {
+        width: props.attributes.topWidth,
+        height: props.attributes.topHight
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
         title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Top curve", _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain),
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
           style: {
             display: "flex"
           },
@@ -132,7 +144,29 @@ function Edit(props) {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
             children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enable top curve", _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain)
           })]
-        })
+        }), props.attributes.enableTopCurve && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.HorizontalRule, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Width", _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain),
+            min: 100,
+            max: 300,
+            value: props.attributes.topWidth || 100,
+            onChange: newValue => {
+              props.setAttributes({
+                topWidth: parseInt(newValue)
+              });
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Hight", _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain),
+            min: 0,
+            max: 200,
+            value: props.attributes.topHight,
+            onChange: newValue => {
+              props.setAttributes({
+                topHight: parseInt(newValue)
+              });
+            }
+          })]
+        })]
       })
     })]
   });
