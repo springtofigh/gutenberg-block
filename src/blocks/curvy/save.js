@@ -4,7 +4,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -16,9 +16,10 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {Element} Element to render.
  */
 export default function save() {
-	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Curvy – hello from the saved content!' }
-		</p>
-	);
+	const blockProps = useBlockProps.save();
+	const { children } = useInnerBlocksProps.save(blockProps); // innerBlocksPros returns an object called children
+
+	// به جای ذخیره کردن تگ و صفت ها به شکل استاتیک از روش داینامیک استفاده می کنیم
+	return children;
+
 }
