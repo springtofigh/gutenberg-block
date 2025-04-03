@@ -4,17 +4,24 @@ export const Curve = (props) => {
   const invertedPath = "M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z";
 
   return (
-    <div style={{ position:"absolute", top:0, left:0, 
-      height:props.height,
-      width:"100%", 
-      overflow:"hidden", 
-      transform: `scaleX(${props.flipX ? -1: 1}) rotate(${props.flipY ? "180deg": 0})`}}
+    <div style={{
+      position: "absolute",
+      top: !props.isBottom ? 0 : "initial",
+      bottom: props.isBottom ? 0 : "initial",
+      left: 0,
+      height: props.height,
+      width: "100%",
+      overflow: "hidden",
+      transform: `scaleX(${props.flipX ? -1 : 1}) 
+      rotate(${props.flipY ? "180deg" : 0}) 
+      scaleY(${props.isBottom ? -1 : 1})
+      `}}
     >
-      <svg 
-      preserveAspectRatio="none" 
-      className={{ position:"absolute", top:0, left:0, height:props.height, width: `${props.width}%` }}
-      viewBox="0 0 1200 120"> {/* x y width height */}
-        <path style={{fill: props.color || "white"}} d={props.flipY ? invertedPath : notmalPath}></path>
+      <svg
+        preserveAspectRatio="none"
+        className={{ position: "absolute", top: 0, left: 0, height: props.height, width: `${props.width}%` }}
+        viewBox="0 0 1200 120"> {/* x y width height */}
+        <path style={{ fill: props.color || "white" }} d={props.flipY ? invertedPath : notmalPath}></path>
       </svg>
     </div>
   )
