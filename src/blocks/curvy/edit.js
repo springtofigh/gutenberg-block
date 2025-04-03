@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { useBlockProps, InspectorControls, ColorPalette } from '@wordpress/block-editor';
 import { PanelBody, ToggleControl, HorizontalRule, RangeControl } from "@wordpress/components";
 
 /**
@@ -42,7 +42,12 @@ export default function Edit(props) {
 		<>
 		<section className={`${className} alignfull`} {...blockProps}>
 		{
-			props.attributes.enableTopCurve && <Curve width={props.attributes.topWidth}  height={props.attributes.topHight} />
+			props.attributes.enableTopCurve && <Curve width={props.attributes.topWidth}  
+			height={props.attributes.topHight}
+			flipX={props.attributes.topFlipX}
+			flipY={props.attributes.topFlipY}
+			color={props.attributes.topColor}
+			/>
 		}
 		</section>
 		<InspectorControls>
@@ -82,6 +87,37 @@ export default function Edit(props) {
 					});
 				}}
 				/>
+				<HorizontalRule />
+				<div style={{display: "flex"}}>
+				<ToggleControl onChange={(isChecked) => {
+					props.setAttributes({
+						topFlipX: isChecked
+					});
+				}} 
+				checked={props.attributes.topFlipX} />
+				<span>{__("Flip horizontally", metadata.textdomain)}</span>
+				</div>
+				<div style={{display: "flex"}}>
+				<ToggleControl onChange={(isChecked) => {
+					props.setAttributes({
+						topFlipY: isChecked
+					});
+				}} 
+				checked={props.attributes.topFlipY} />
+				<span>{__("Flip vertically", metadata.textdomain)}</span>
+				</div>
+				<HorizontalRule />
+				<div>
+					<label>{__("Curve color" , metadata.textdomain)}</label>
+					<ColorPalette
+					 value={props.attributes.topColor}
+					 onChange={(newValue) => {
+						props.setAttributes({
+							topColor: newValue
+						})
+					 }}
+					 />
+				</div>
 				</>
 			}
 		</PanelBody>

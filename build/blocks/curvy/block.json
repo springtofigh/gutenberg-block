@@ -47,6 +47,18 @@
     "topHight": {
       "type": "number",
       "default": 100
+    },
+    "topFlipX": {
+      "type": "boolean",
+      "default": false
+    },
+    "topFlipY": {
+      "type": "boolean",
+      "default": false
+    },
+    "topColor": {
+      "type": "string",
+      "default": "#FFFFFF"
     }
   },
   "textdomain": "blockylicious",
