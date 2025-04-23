@@ -8,7 +8,7 @@
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"widgets","icon":"smiley","description":"Make curvy styles more creative and easier than you except.","example":{},"supports":{"html":false,"color":{"background":true,"text":true,"link":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#21759b"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"50px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHight":{"type":"number","default":100},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#FFFFFF"},"enableBottomCurve":{"type":"boolean","default":true},"bottomWidth":{"type":"number","default":100},"bottomHight":{"type":"number","default":100},"bottomFlipX":{"type":"boolean","default":false},"bottomFlipY":{"type":"boolean","default":false},"bottomColor":{"type":"string","default":"#FFFFFF"}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"widgets","icon":"smiley","description":"Make curvy styles more creative and easier than you except.","example":{},"supports":{"html":false,"color":{"background":true,"text":true,"link":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#21759b"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"50px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHeight":{"type":"number","default":100},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#FFFFFF"},"enableBottomCurve":{"type":"boolean","default":true},"bottomWidth":{"type":"number","default":100},"bottomHeight":{"type":"number","default":100},"bottomFlipX":{"type":"boolean","default":false},"bottomFlipY":{"type":"boolean","default":false},"bottomColor":{"type":"string","default":"#FFFFFF"}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -49,13 +49,13 @@ const BottomCurveSettings = props => {
         });
       }
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Hight", _block_json__WEBPACK_IMPORTED_MODULE_2__.textdomain),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Height", _block_json__WEBPACK_IMPORTED_MODULE_2__.textdomain),
       min: 0,
       max: 200,
-      value: props.attributes.bottomHight,
+      value: props.attributes.bottomHeight,
       onChange: newValue => {
         props.setAttributes({
-          bottomHight: parseInt(newValue)
+          bottomHeight: parseInt(newValue)
         });
       }
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.HorizontalRule, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -135,18 +135,20 @@ const TopCurveSettings = props => {
       max: 300,
       value: props.attributes.topWidth || 100,
       onChange: newValue => {
+        console.log("New Width:", newValue);
         props.setAttributes({
           topWidth: parseInt(newValue)
         });
+        console.log("Updated Attributes:", props.attributes);
       }
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.RangeControl, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Hight", _block_json__WEBPACK_IMPORTED_MODULE_2__.textdomain),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Height", _block_json__WEBPACK_IMPORTED_MODULE_2__.textdomain),
       min: 0,
       max: 200,
-      value: props.attributes.topHight,
+      value: props.attributes.topHeight,
       onChange: newValue => {
         props.setAttributes({
-          topHight: parseInt(newValue)
+          topHeight: parseInt(newValue)
         });
       }
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.HorizontalRule, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -326,14 +328,14 @@ function Edit(props) {
       ...blockProps,
       children: [props.attributes.enableTopCurve && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_curve__WEBPACK_IMPORTED_MODULE_5__.Curve, {
         width: props.attributes.topWidth,
-        height: props.attributes.topHight,
+        height: props.attributes.topHeight,
         flipX: props.attributes.topFlipX,
         flipY: props.attributes.topFlipY,
         color: props.attributes.topColor
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {}), props.attributes.enableBottomCurve && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_curve__WEBPACK_IMPORTED_MODULE_5__.Curve, {
         isBottom: true,
         width: props.attributes.bottomWidth,
-        height: props.attributes.bottomHight,
+        height: props.attributes.bottomHeight,
         flipX: props.attributes.bottomFlipX,
         flipY: props.attributes.bottomFlipY,
         color: props.attributes.bottomColor

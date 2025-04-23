@@ -9,8 +9,8 @@ $bottomTransform = "rotate(" . ($attributes['bottomFlipY'] ? "180deg" : "0") . "
 
 <div <? echo $block_wrapper_attributes; ?>>
     <div class="curve top-curve"
-        style="height:<? echo $attributes['topHight'] ?>px; transform:<? echo $topTransform; ?>; display:<? echo $attributes['enableTopCurve'] ?  "block": "none"; ?>;">
-        <svg style="height:<? echo $attributes['topHight'] ?>px; width:<? echo $attributes['topWidth'] ?>%;"
+        style="height:<? echo $attributes['topHeight'] ?>px; transform:<? echo $topTransform; ?>; display:<? echo $attributes['enableTopCurve'] ?  "block": "none"; ?>;">
+        <svg style="height:<? echo $attributes['topHeight'] ?>px; width:<? echo $attributes['topWidth'] ?>%;"
             preserveAspectRatio="none" viewBox="0 0 1200 120">
             <path fill="<? echo $attributes['bottomColor'] ?? "white" ?>"
                 d="<? echo $attributes['topFlipY'] ? $invertedPath : $notmalPath; ?>"></path>
@@ -18,8 +18,8 @@ $bottomTransform = "rotate(" . ($attributes['bottomFlipY'] ? "180deg" : "0") . "
     </div>
     <? echo $content; ?>
     <div class="curve bottom-curve"
-        style="height:<? echo $attributes['bottomHight'] ?>px; transform:<? echo $bottomTransform; ?>; display:<? echo $attributes['enableBottomCurve'] ?  "block": "none"; ?>;">
-        <svg style="height:<? echo $attributes['bottomHight'] ?>px; width:<? echo $attributes['bottomWidth'] ?>%;"
+        style="height:<? echo $attributes['bottomHeight'] ?>px; transform:<? echo $bottomTransform; ?>; display:<? echo $attributes['enableBottomCurve'] ?  "block": "none"; ?>;">
+        <svg style="height:<? echo $attributes['bottomHeight'] ?>px; width:<? echo $attributes['bottomWidth'] ?>%;"
             preserveAspectRatio="none" viewBox="0 0 1200 120">
             <path fill="<? echo $attributes['bottomColor'] ?? "white" ?>"
                 d="<? echo $attributes['bottomFlipY'] ? $invertedPath : $notmalPath; ?>"></path>

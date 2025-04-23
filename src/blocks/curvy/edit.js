@@ -45,7 +45,7 @@ export default function Edit(props) {
 			<section className={`${className} alignfull`} {...blockProps}>
 				{
 					props.attributes.enableTopCurve && <Curve width={props.attributes.topWidth}
-						height={props.attributes.topHight}
+						height={props.attributes.topHeight}
 						flipX={props.attributes.topFlipX}
 						flipY={props.attributes.topFlipY}
 						color={props.attributes.topColor}
@@ -54,7 +54,7 @@ export default function Edit(props) {
 				<InnerBlocks />
 				{
 					props.attributes.enableBottomCurve && <Curve isBottom width={props.attributes.bottomWidth}
-						height={props.attributes.bottomHight}
+						height={props.attributes.bottomHeight}
 						flipX={props.attributes.bottomFlipX}
 						flipY={props.attributes.bottomFlipY}
 						color={props.attributes.bottomColor}

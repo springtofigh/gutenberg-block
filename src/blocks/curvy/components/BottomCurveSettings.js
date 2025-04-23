@@ -19,13 +19,13 @@ export const BottomCurveSettings = (props) => {
         }}
     />
     <RangeControl
-        label={__("Hight", metadata.textdomain)}
+        label={__("Height", metadata.textdomain)}
         min={0}
         max={200}
-        value={props.attributes.bottomHight}
+        value={props.attributes.bottomHeight}
         onChange={(newValue) => {
             props.setAttributes({
-                bottomHight: parseInt(newValue),
+                bottomHeight: parseInt(newValue),
             });
         }}
     />

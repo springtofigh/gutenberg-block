@@ -13,19 +13,21 @@ export const TopCurveSettings = (props) => {
                 max={300}
                 value={props.attributes.topWidth || 100}
                 onChange={(newValue) => {
+                    console.log("New Width:", newValue);
                     props.setAttributes({
                         topWidth: parseInt(newValue),
                     });
+                    console.log("Updated Attributes:", props.attributes);
                 }}
             />
             <RangeControl
-                label={__("Hight", metadata.textdomain)}
+                label={__("Height", metadata.textdomain)}
                 min={0}
                 max={200}
-                value={props.attributes.topHight}
+                value={props.attributes.topHeight}
                 onChange={(newValue) => {
                     props.setAttributes({
-                        topHight: parseInt(newValue),
+                        topHeight: parseInt(newValue),
                     });
                 }}
             />

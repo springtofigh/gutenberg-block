@@ -44,7 +44,7 @@
 			"type":"number",
 			"default": 100
 		},
-		"topHight":{
+		"topHeight":{
 			"type":"number",
 			"default": 100
 		},
@@ -68,7 +68,7 @@
 			"type":"number",
 			"default": 100
 		},
-		"bottomHight":{
+		"bottomHeight":{
 			"type":"number",
 			"default": 100
 		},
