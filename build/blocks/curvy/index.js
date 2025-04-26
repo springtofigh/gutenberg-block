@@ -2,13 +2,183 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/curvy/assets/26 - icon.svg":
+/*!***********************************************!*\
+  !*** ./src/blocks/curvy/assets/26 - icon.svg ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ReactComponent: () => (/* binding */ Svg26Icon),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _defs, _path, _path2, _path3, _path4, _path5, _path6, _g, _g2, _g3, _g4, _g5, _g6, _g7;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+
+var Svg26Icon = function Svg26Icon(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 500,
+    height: 500,
+    viewBox: "0 0 375 375"
+  }, props), _defs || (_defs = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("defs", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__i"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "m-65.996 16.832 170.144-114.16 62.68 93.422-170.14 114.16zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__a"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M0 278h375v97H0zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__c"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M644.113 447.121 429.336 745.328-63.621 390.29 151.156 92.082zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__d"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M158 361h217v14H158zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__e"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M-63.324 390.344 151.453 92.137l492.953 355.039L429.63 745.383zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__f"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M644.113 447.121 429.336 745.328-63.621 390.29 151.156 92.082zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__g"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M0 0h167v111H0zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__h"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M-65.996 16.832 104.3-97.43l62.683 93.418L-3.313 110.254zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__b"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M-63.324 390.344 151.453 92.137l492.953 355.039L429.63 745.383zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__j"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M156.355 0H375v32.25H156.355zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__k"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M278.785 0H375v48.164h-96.215zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__l"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M335.035-64.336c-31.066 0-56.25 25.184-56.25 56.25s25.184 56.25 56.25 56.25c31.067 0 56.25-25.184 56.25-56.25s-25.183-56.25-56.25-56.25"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__m"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M118.898 337.5H375V375H118.898zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__n"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M250.883 337.5c-72.89 0-131.985 25.184-131.985 56.25S177.992 450 250.883 450c72.894 0 131.988-25.184 131.988-56.25s-59.094-56.25-131.988-56.25"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__o"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M0 319h67v56H0zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__p"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "m-43.074 346.102 20.808-26.872 88.946 68.883-20.809 26.871zm0 0"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("clipPath", {
+    id: "26_-_icon_svg__q"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "m-43.074 346.102 20.578-26.57 88.945 68.882-20.578 26.57zm0 0"
+  })))), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M-37.5-37.5h450v450h-450z"
+  })), _path2 || (_path2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M-37.5-37.5h450v450h-450z"
+  })), _path3 || (_path3 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#202124",
+    d: "M-37.5-37.5h450v450h-450z"
+  })), _path4 || (_path4 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#202124",
+    d: "M211.21 159.45c92.349 12.823 128.192-58.583 179.376-126.54 51.18-67.945 126.898-21.75 126.898-21.75-85.761-26.41-88.562 60.348-157.37 148.942-68.81 88.593-148.903-.653-148.903-.653"
+  })), _path5 || (_path5 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#202124",
+    d: "M49.152 162.184S68.54 30.406 218.738 88.719c0 0 80.598 34.219 147.703-39.465 0 0-75.527 125.016-164.789 94.836-89.265-30.188-127.109-16.903-152.5 18.094"
+  })), _path6 || (_path6 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M379.68 27.227s-72.38 73.816-140.274 53.668C143.66 52.48 89.867 42.535-.008 108.387c0 0 101.383-173.043 293.563-78.785 0 0 52.367 24.742 86.125-2.375"
+  })), _g || (_g = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__a)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__b)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__c)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M381.7 387.21c-79.18-75.55-162.247-32.222-257.555-2.698-95.301 29.52-135.782-66.371-135.782-66.371 63.602 83.96 125.703 3.355 251.946-33.707 126.234-37.063 141.39 102.777 141.39 102.777"
+  }))))), _g2 || (_g2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__d)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__e)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__f)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#202124",
+    d: "M537.941 495.797S429.2 607.84 326.074 449.328c0 0-53.336-87.844-167.734-63.797 0 0 157.59-67.097 221.941 22.852 64.352 89.953 109.504 103.281 157.66 87.414"
+  }))))), _g3 || (_g3 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__g)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__h)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__i)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M-65.996 16.832 104.3-97.43l62.683 93.418L-3.313 110.254zm0 0"
+  }))))), _g4 || (_g4 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__j)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M156.355-80.25h244.922v112.5H156.355zm0 0"
+  }))), _g5 || (_g5 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__k)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__l)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M278.785-64.336h112.5v112.5h-112.5zm0 0"
+  })))), _g6 || (_g6 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__m)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__n)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "M118.898 337.5h264.258V450H118.898zm0 0"
+  })))), _g7 || (_g7 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__o)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__p)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("g", {
+    clipPath: "url(#26_-_icon_svg__q)"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    fill: "#fff",
+    d: "m-43.074 346.102 20.449-26.407 88.95 68.883-20.454 26.406zm0 0"
+  }))))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIHZpZXdCb3g9IjAgMCAzNzUgMzc1IiBoZWlnaHQ9IjUwMCIgdmVyc2lvbj0iMS4wIj48ZGVmcz48Y2xpcFBhdGggaWQ9ImkiPjxwYXRoIGQ9Im0tNjUuOTk2IDE2LjgzMiAxNzAuMTQ0LTExNC4xNiA2Mi42OCA5My40MjItMTcwLjE0IDExNC4xNnptMCAwIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGQ9Ik0wIDI3OGgzNzV2OTdIMHptMCAwIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImMiPjxwYXRoIGQ9Ik02NDQuMTEzIDQ0Ny4xMjEgNDI5LjMzNiA3NDUuMzI4LTYzLjYyMSAzOTAuMjkgMTUxLjE1NiA5Mi4wODJ6bTAgMCIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJkIj48cGF0aCBkPSJNMTU4IDM2MWgyMTd2MTRIMTU4em0wIDAiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iZSI+PHBhdGggZD0iTS02My4zMjQgMzkwLjM0NCAxNTEuNDUzIDkyLjEzN2w0OTIuOTUzIDM1NS4wMzlMNDI5LjYzIDc0NS4zODN6bTAgMCIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJmIj48cGF0aCBkPSJNNjQ0LjExMyA0NDcuMTIxIDQyOS4zMzYgNzQ1LjMyOC02My42MjEgMzkwLjI5IDE1MS4xNTYgOTIuMDgyem0wIDAiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iZyI+PHBhdGggZD0iTTAgMGgxNjd2MTExSDB6bTAgMCIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJoIj48cGF0aCBkPSJNLTY1Ljk5NiAxNi44MzIgMTA0LjMtOTcuNDNsNjIuNjgzIDkzLjQxOEwtMy4zMTMgMTEwLjI1NHptMCAwIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImIiPjxwYXRoIGQ9Ik0tNjMuMzI0IDM5MC4zNDQgMTUxLjQ1MyA5Mi4xMzdsNDkyLjk1MyAzNTUuMDM5TDQyOS42MyA3NDUuMzgzem0wIDAiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iaiI+PHBhdGggZD0iTTE1Ni4zNTUgMEgzNzV2MzIuMjVIMTU2LjM1NXptMCAwIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImsiPjxwYXRoIGQ9Ik0yNzguNzg1IDBIMzc1djQ4LjE2NGgtOTYuMjE1em0wIDAiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0ibCI+PHBhdGggZD0iTTMzNS4wMzUtNjQuMzM2Yy0zMS4wNjYgMC01Ni4yNSAyNS4xODQtNTYuMjUgNTYuMjVzMjUuMTg0IDU2LjI1IDU2LjI1IDU2LjI1YzMxLjA2NyAwIDU2LjI1LTI1LjE4NCA1Ni4yNS01Ni4yNXMtMjUuMTgzLTU2LjI1LTU2LjI1LTU2LjI1Ii8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9Im0iPjxwYXRoIGQ9Ik0xMTguODk4IDMzNy41SDM3NVYzNzVIMTE4Ljg5OHptMCAwIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9Im4iPjxwYXRoIGQ9Ik0yNTAuODgzIDMzNy41Yy03Mi44OSAwLTEzMS45ODUgMjUuMTg0LTEzMS45ODUgNTYuMjVTMTc3Ljk5MiA0NTAgMjUwLjg4MyA0NTBjNzIuODk0IDAgMTMxLjk4OC0yNS4xODQgMTMxLjk4OC01Ni4yNXMtNTkuMDk0LTU2LjI1LTEzMS45ODgtNTYuMjUiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0ibyI+PHBhdGggZD0iTTAgMzE5aDY3djU2SDB6bTAgMCIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlkPSJwIj48cGF0aCBkPSJtLTQzLjA3NCAzNDYuMTAyIDIwLjgwOC0yNi44NzIgODguOTQ2IDY4Ljg4My0yMC44MDkgMjYuODcxem0wIDAiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0icSI+PHBhdGggZD0ibS00My4wNzQgMzQ2LjEwMiAyMC41NzgtMjYuNTcgODguOTQ1IDY4Ljg4Mi0yMC41NzggMjYuNTd6bTAgMCIvPjwvY2xpcFBhdGg+PC9kZWZzPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0tMzcuNS0zNy41aDQ1MHY0NTBoLTQ1MHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNLTM3LjUtMzcuNWg0NTB2NDUwaC00NTB6Ii8+PHBhdGggZmlsbD0iIzIwMjEyNCIgZD0iTS0zNy41LTM3LjVoNDUwdjQ1MGgtNDUweiIvPjxwYXRoIGZpbGw9IiMyMDIxMjQiIGQ9Ik0yMTEuMjEgMTU5LjQ1YzkyLjM0OSAxMi44MjMgMTI4LjE5Mi01OC41ODMgMTc5LjM3Ni0xMjYuNTQgNTEuMTgtNjcuOTQ1IDEyNi44OTgtMjEuNzUgMTI2Ljg5OC0yMS43NS04NS43NjEtMjYuNDEtODguNTYyIDYwLjM0OC0xNTcuMzcgMTQ4Ljk0Mi02OC44MSA4OC41OTMtMTQ4LjkwMy0uNjUzLTE0OC45MDMtLjY1MyIvPjxwYXRoIGZpbGw9IiMyMDIxMjQiIGQ9Ik00OS4xNTIgMTYyLjE4NFM2OC41NCAzMC40MDYgMjE4LjczOCA4OC43MTljMCAwIDgwLjU5OCAzNC4yMTkgMTQ3LjcwMy0zOS40NjUgMCAwLTc1LjUyNyAxMjUuMDE2LTE2NC43ODkgOTQuODM2LTg5LjI2NS0zMC4xODgtMTI3LjEwOS0xNi45MDMtMTUyLjUgMTguMDk0Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM3OS42OCAyNy4yMjdzLTcyLjM4IDczLjgxNi0xNDAuMjc0IDUzLjY2OEMxNDMuNjYgNTIuNDggODkuODY3IDQyLjUzNS0uMDA4IDEwOC4zODdjMCAwIDEwMS4zODMtMTczLjA0MyAyOTMuNTYzLTc4Ljc4NSAwIDAgNTIuMzY3IDI0Ljc0MiA4Ni4xMjUtMi4zNzUiLz48ZyBjbGlwLXBhdGg9InVybCgjYSkiPjxnIGNsaXAtcGF0aD0idXJsKCNiKSI+PGcgY2xpcC1wYXRoPSJ1cmwoI2MpIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzgxLjcgMzg3LjIxYy03OS4xOC03NS41NS0xNjIuMjQ3LTMyLjIyMi0yNTcuNTU1LTIuNjk4LTk1LjMwMSAyOS41Mi0xMzUuNzgyLTY2LjM3MS0xMzUuNzgyLTY2LjM3MSA2My42MDIgODMuOTYgMTI1LjcwMyAzLjM1NSAyNTEuOTQ2LTMzLjcwNyAxMjYuMjM0LTM3LjA2MyAxNDEuMzkgMTAyLjc3NyAxNDEuMzkgMTAyLjc3NyIvPjwvZz48L2c+PC9nPjxnIGNsaXAtcGF0aD0idXJsKCNkKSI+PGcgY2xpcC1wYXRoPSJ1cmwoI2UpIj48ZyBjbGlwLXBhdGg9InVybCgjZikiPjxwYXRoIGZpbGw9IiMyMDIxMjQiIGQ9Ik01MzcuOTQxIDQ5NS43OTdTNDI5LjIgNjA3Ljg0IDMyNi4wNzQgNDQ5LjMyOGMwIDAtNTMuMzM2LTg3Ljg0NC0xNjcuNzM0LTYzLjc5NyAwIDAgMTU3LjU5LTY3LjA5NyAyMjEuOTQxIDIyLjg1MiA2NC4zNTIgODkuOTUzIDEwOS41MDQgMTAzLjI4MSAxNTcuNjYgODcuNDE0Ii8+PC9nPjwvZz48L2c+PGcgY2xpcC1wYXRoPSJ1cmwoI2cpIj48ZyBjbGlwLXBhdGg9InVybCgjaCkiPjxnIGNsaXAtcGF0aD0idXJsKCNpKSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTS02NS45OTYgMTYuODMyIDEwNC4zLTk3LjQzbDYyLjY4MyA5My40MThMLTMuMzEzIDExMC4yNTR6bTAgMCIvPjwvZz48L2c+PC9nPjxnIGNsaXAtcGF0aD0idXJsKCNqKSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE1Ni4zNTUtODAuMjVoMjQ0LjkyMnYxMTIuNUgxNTYuMzU1em0wIDAiLz48L2c+PGcgY2xpcC1wYXRoPSJ1cmwoI2spIj48ZyBjbGlwLXBhdGg9InVybCgjbCkiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNzguNzg1LTY0LjMzNmgxMTIuNXYxMTIuNWgtMTEyLjV6bTAgMCIvPjwvZz48L2c+PGcgY2xpcC1wYXRoPSJ1cmwoI20pIj48ZyBjbGlwLXBhdGg9InVybCgjbikiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMTguODk4IDMzNy41aDI2NC4yNThWNDUwSDExOC44OTh6bTAgMCIvPjwvZz48L2c+PGcgY2xpcC1wYXRoPSJ1cmwoI28pIj48ZyBjbGlwLXBhdGg9InVybCgjcCkiPjxnIGNsaXAtcGF0aD0idXJsKCNxKSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibS00My4wNzQgMzQ2LjEwMiAyMC40NDktMjYuNDA3IDg4Ljk1IDY4Ljg4My0yMC40NTQgMjYuNDA2em0wIDAiLz48L2c+PC9nPjwvZz48L3N2Zz4=");
+
+/***/ }),
+
 /***/ "./src/blocks/curvy/block.json":
 /*!*************************************!*\
   !*** ./src/blocks/curvy/block.json ***!
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"widgets","icon":"smiley","description":"Make curvy styles more creative and easier than you except.","example":{},"supports":{"html":false,"color":{"background":true,"text":true,"link":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#21759b"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"50px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHeight":{"type":"number","default":100},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#FFFFFF"},"enableBottomCurve":{"type":"boolean","default":true},"bottomWidth":{"type":"number","default":100},"bottomHeight":{"type":"number","default":100},"bottomFlipX":{"type":"boolean","default":false},"bottomFlipY":{"type":"boolean","default":false},"bottomColor":{"type":"string","default":"#FFFFFF"}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"blockylicious","icon":"smiley","description":"Make curvy styles more creative and easier than you except.","example":{},"supports":{"html":false,"color":{"background":true,"text":true,"link":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#21759b"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"50px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHeight":{"type":"number","default":100},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#FFFFFF"},"enableBottomCurve":{"type":"boolean","default":true},"bottomWidth":{"type":"number","default":100},"bottomHeight":{"type":"number","default":100},"bottomFlipX":{"type":"boolean","default":false},"bottomFlipY":{"type":"boolean","default":false},"bottomColor":{"type":"string","default":"#FFFFFF"}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
 
 /***/ }),
 
@@ -413,6 +583,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/blocks/curvy/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/blocks/curvy/save.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/blocks/curvy/block.json");
+/* harmony import */ var _assets_26_icon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/26 - icon.svg */ "./src/blocks/curvy/assets/26 - icon.svg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__);
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
@@ -436,11 +609,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
+
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
   /**
    * @see ./edit.js
@@ -449,7 +624,29 @@ __webpack_require__.r(__webpack_exports__);
   /**
    * @see ./save.js
    */
-  save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
+  save: _save__WEBPACK_IMPORTED_MODULE_3__["default"],
+  icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
+    src: _assets_26_icon_svg__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }),
+  transforms: {
+    from: [{
+      type: "block",
+      blocks: ["core/paragraph"],
+      transform: attributes => {
+        // console.log({data})  //یک آبجت باید به این تابع داد
+
+        //name, attributes (top/bottom curve), innerBlocks
+        return (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("blockylicious/curvy", {}, [(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("core/paragraph", attributes)]);
+      }
+    }, {
+      type: "block",
+      blocks: ["core/heading"],
+      transform: attributes => {
+        //name, attributes (top/bottom curve), innerBlocks
+        return (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("blockylicious/curvy", {}, [(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("core/heading", attributes)]);
+      }
+    }]
+  }
 });
 
 /***/ }),
@@ -544,6 +741,16 @@ module.exports = window["wp"]["components"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["i18n"];
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = window["React"];
 
 /***/ }),
 
