@@ -7,7 +7,22 @@
   "category": "blockylicious",
   "icon": "smiley",
   "description": "Make curvy styles more creative and easier than you except.",
-  "example": {},
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "core/heading",
+        "attributes": {
+          "content": "Lorem Ipsume"
+        }
+      },
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "This is a block"
+        }
+      }
+    ]
+  },
   "supports": {
     "html": false,
     "color": {
@@ -19,6 +34,24 @@
       "padding": true
     }
   },
+  "variations": [
+    {
+      "name": "top-only",
+      "title": "Curvy - top only",
+      "attributes": {
+        "enableBottomCurve": false,
+        "enableTopCurve": true
+      }
+    },
+    {
+      "name": "bottom-only",
+      "title": "Curvy - bottom only",
+      "attributes": {
+        "enableBottomCurve": true,
+        "enableTopCurve": false
+      }
+    }
+  ],
   "attributes": {
     "style": {
       "type": "object",
