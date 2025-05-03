@@ -14,7 +14,7 @@
  * @package CreateBlock
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
@@ -26,18 +26,21 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 
-	function create_custome_block_category($categories) {
-		// wp_send_json($categories);  // آرایه ای از تمام کتگوری ها
+function create_custome_block_category($categories)
+{
+	// wp_send_json($categories);  // آرایه ای از تمام کتگوری ها
 
-		//میخوایم المان ما در ابتدای ویجت ها نمایش داده بشه
-		array_unshift($categories, [
-			"slug" => "blockylicious",
-			"title" => "Blockylicious"
-		]);
-		return $categories;
-	}
-function create_block_blockylicious_block_init() {
-	add_filter( 'block_categories_all', 'create_custome_block_category' );
-			register_block_type( __DIR__ . "/build/blocks/curvy" );
+	//میخوایم المان ما در ابتدای ویجت ها نمایش داده بشه
+	array_unshift($categories, [
+		"slug" => "blockylicious",
+		"title" => "Blockylicious"
+	]);
+	return $categories;
 }
-add_action( 'init', 'create_block_blockylicious_block_init' );
+function create_block_blockylicious_block_init()
+{
+	add_filter('block_categories_all', 'create_custome_block_category');
+	register_block_type(__DIR__ . "/build/blocks/curvy");
+	register_block_type(__DIR__ . "/build/blocks/clickyGroup");
+}
+add_action('init', 'create_block_blockylicious_block_init');
